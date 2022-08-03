@@ -1,0 +1,12 @@
+1) javac -cp App.jar --enable-preview --release 18  Shape.java Rectangle.java Circle.java SwitchInstanceOf.java
+saída: 
+
+Note: SwitchInstanceOf.java uses preview features of Java SE 18.
+Note: Recompile with -Xlint:preview for details.
+
+2) jar cmf manifest.mf App.jar Shape.class Rectangle.class Circle.class SwitchInstanceOf.class
+
+3) java --enable-preview -jar App.jar
+
+40.0
+62.83185307179586
